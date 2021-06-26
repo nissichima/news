@@ -15,7 +15,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "webpack": "^4.35.3",
+    "webpack": "^4.35.5",
     "webpack-cli": "^3.3.5"
   },
  "dependencies": {
@@ -43,7 +43,7 @@
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1 ",
     "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^5.1.1",
+    "terser-webpack-plugin": "^4.1.0",
     "webpack-dev-server": "^3.11.2",
     "workbox-webpack-plugin": "^6.1.5"
   }
