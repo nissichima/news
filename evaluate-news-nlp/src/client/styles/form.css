@@ -2,6 +2,8 @@ form {
     border: 1px solid #545454;
     border-radius: 3px;
     padding: 40px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 input {
@@ -9,4 +11,16 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+}
+
+//phone
+@media only screen and (max-width: 715px) {
+}
+
+// tablet
+@media only screen and (max-width: 990px) {
+}
+
+// desktop
+@media only screen and (min-width: 901px) {
 }
