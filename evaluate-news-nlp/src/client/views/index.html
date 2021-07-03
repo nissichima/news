@@ -2,38 +2,45 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <title>Test</title>
-        <script type="text/javascript" src="../../../dist/main.js"></script>
     </head>
 
     <body>
 
         <header>
-            <div class="">
+            <div class="logo">
                 Logo
             </div>
-            <div class="">
+            <div class="nav">
                 navigation
             </div>
         </header>
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
+                <form class="form" onsubmit="return Client.handleSubmit(event)">
                     <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
                     <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
                 </form>
             </section>
 
             <section>
+                <div class="form-results">
                 <strong>Form Results:</strong>
                 <div id="results"></div>
+                </div>
             </section>
         </main>
 
         <footer>
             <p>This is a footer</p>
         </footer>
-
+        <script> if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }</script>
     </body>
+
 </html>

@@ -1,11 +1,11 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
-import './styles/resets.css'
-import './styles/footer.css'
-import './styles/form.css'
-import './styles/base.css'
-import './styles/header.css'
-import './styles/message.css'
+import './styles/resets.scss'
+import './styles/footer.scss'
+import './styles/form.scss'
+import './styles/base.scss'
+import './styles/header.scss'
+import './styles/message.scss'
 
 console.log(checkForName);
 

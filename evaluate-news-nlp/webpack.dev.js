@@ -1,4 +1,5 @@
 const path = require('path')
+const common = require("./webpack.config.js")
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -26,6 +27,10 @@ module.exports = {
             // Compiles Sass to CSS
             "sass-loader",
         ],
+    },
+    {
+        test: /\.scss$/,
+        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
     },
     {
         test: /\.css$/,
