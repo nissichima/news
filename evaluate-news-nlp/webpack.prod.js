@@ -13,11 +13,19 @@ module.exports = {
                 loader: "babel-loader"
             }
         ]
+    }
+},
+    { 
+        test: /\.(sa|sc|c)ss$/,
+        use: ["style-loader", "css-loader"]
+
     },
+{
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html",
         })
     ]
-}
+};
+

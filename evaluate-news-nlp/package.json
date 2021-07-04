@@ -21,7 +21,6 @@
     "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.1",
     "jest-fetch-mock": "^3.0.3",
-    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
@@ -44,12 +43,12 @@
     "node-fetch": "^2.6.1",
     "node-sass": "^6.0.1",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
-    "sass": "^1.32.8",
+    "sass": "^1.35.1",
     "sass-loader": "^10.2.0",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.1.0",
     "url-loader": "^4.1.1",
-    "webpack": "^5.37.1",
+    "webpack": "^5.42.0",
     "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2",
