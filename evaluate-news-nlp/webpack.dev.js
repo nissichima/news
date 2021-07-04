@@ -3,7 +3,6 @@ const common = require("./webpack.config.js")
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-
 module.exports = {
     entry: './src/client/index.js',
     devtool: 'source-map',
@@ -16,48 +15,19 @@ module.exports = {
                             loader: "babel-loader"
                         },
                         {
-                            test: /\.s[ac]ss$/i,
-                            use: [
-                                // Creates `style` nodes from JS strings
-                                "style-loader",
-                                // Translates CSS into CommonJS
-                                "css-loader",
-                                // Compiles Sass to CSS
-                                "sass-loader",
-                            ],
-                        },
-                        {
-                            test: /\.scss$/,
+                            test: /\.(sa|sc|c)ss$/,
                             use: [ 'style-loader', 'css-loader', 'sass-loader' ]
-                        },
-                        {
-                            test: /\.css$/,
-                            use: [
-                                {
-                                    loader: "style-loader",
-                                },
-                                {
-                                    loader: "css-loader",
-                                    options: {
-                                    modules: true,
-                                    },
-                                },
-                            ],
-                        },
-                    ]}},
-
-    {
+                        },  
+                    ]
+                },    
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
         new CleanWebpackPlugin({
-            // Simulate the removal of files
             dry: true,
-            // Write Logs to Console
             verbose: true,
-            // Automatically remove all unused webpack assets on rebuild
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
