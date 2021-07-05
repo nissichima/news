@@ -1,4 +1,4 @@
-import { checkForName } from './js/nameChecker'
+import { validURL } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
 import './styles/resets.scss'
 
@@ -8,6 +8,6 @@ import './styles/base.scss'
 import './styles/header.scss'
 import './styles/message.scss'
 
-/*
-export { checkUrl, handleSubmit };
-*/
+
+export { validURL, handleSubmit };
+
