@@ -1,5 +1,4 @@
-import {validURL} from './src/client/js/urlCheck'
-
+import { validURL } from "../src/client/js/urlCheck";
 
 describe('Testing the existence of function "validURL()"' , () => {
     test('Should return true', async () => {

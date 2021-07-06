@@ -1,4 +1,4 @@
-import {formHandler} from './src/client/js/formHandler';
+import {handleSubmit} from "../src/client/js/formHandler"
 
 test('testing formHandler', ()=>{
     expect(formHandler).toBeDefined();
