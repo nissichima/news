@@ -31,5 +31,9 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
-    ]
+    ],
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    }
 };

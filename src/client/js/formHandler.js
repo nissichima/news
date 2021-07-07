@@ -10,13 +10,13 @@ function handleSubmit(event) {
         console.log("INPUT IS VALID")
         
         //Building Request
-        fetch('http://localhost:8080/article', {
+        fetch('http://localhost:8080/userText', {
             method: 'POST',
             mode: 'cors',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({text: inputt[0].value})
+            body: JSON.stringify({formText: inputt[0].value})
         })
         .then(res => res.json())
         .then(function(res) {

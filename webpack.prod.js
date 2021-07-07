@@ -25,6 +25,10 @@ module.exports = {
             filename: "./index.html",
         }),
         new WorkboxPlugin.GenerateSW()
-    ]
+    ],
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    }
 }
 
