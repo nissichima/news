@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(express.static('dist'));
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 const server = app.listen(port, () => {
     console.log(`running on localhost: ${port}`);
 });
