@@ -5,6 +5,7 @@
 * [Overview](#overview)
 * [Project-Rubric](#project-rubric)
 * [Style-Guide](#style-guide)
+* [HOW-TO-START-UP-APP](#startup)
 
 ## Overview
 
@@ -26,3 +27,11 @@ See below for the Udacity Style Guide used thoroughout the Front End Nanodegree.
 
 * [Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/)
 
+## HOW-TO-START-UP-APP
+1. npm install
+2. npm run build-dev
+3. npm run build-prod
+4. npm start
+
+##Preview
+<img src = "./images/img1.png"/>
