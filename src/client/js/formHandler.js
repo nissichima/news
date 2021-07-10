@@ -25,11 +25,10 @@ function handleSubmit(event) {
 
             // Populate html with result
             document.querySelector('section.analysis #subjectivity').innerHTML = res.subjectivity
-            document.querySelector('section.analysis #polarity').innerHTML = res.polarity
-            document.querySelector('section.analysis #subjectivity_confidence').innerHTML = res.subjectivity_confidence
-            document.querySelector('section.analysis #polarity_confidence').innerHTML = res.polarity_confidence
+            document.querySelector('section.analysis #polarity').innerHTML = res.score_tag
+            document.querySelector('section.analysis #confidence').innerHTML = res.confidence
+            document.querySelector('section.analysis #agreement').innerHTML = res.agreement
             document.querySelector('section.analysis #irony').innerHTML = res.irony
-            document.querySelector('section.analysis #excerpt').innerHTML = res.text
         })
 
     }else{
