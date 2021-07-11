@@ -33,5 +33,5 @@ See below for the Udacity Style Guide used thoroughout the Front End Nanodegree.
 3. npm run build-prod
 4. npm start
 
-##Preview
+## Preview
 <img src = "./images/img1.png"/>
